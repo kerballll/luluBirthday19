@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&family=Mouse+Memoirs&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&family=Mouse+Memoirs&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+:root {
+  --mouseFont: 'Mouse Memoirs', sans-serif;
+  --cuteFont: 'Cute Font', cursive;
+  --robotoFont: 'Roboto', sans-serif;
+  --primaryColor: #1c0c5b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: var(--cuteFont);
+}
+
+body {
+  background-image: radial-gradient(circle 592px at 48.2% 50%, rgba(255, 255, 249, 0.6) 0%, #a0c7fe 74.6%);
+  height: auto;
+}
+
+.cloud {
+  position: absolute;
+  height: 120px;
+  animation: cloudMovement 2s ease infinite alternate-reverse;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-name: cloudMovement;
+          animation-name: cloudMovement;
+}
+
+@media (max-width: 763px) {
+  .cloud {
+    height: 70px;
+    animation: cloudMovement 2s ease infinite alternate-reverse;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+  }
+}
+
+#cloud1 {
+  left: 20px;
+}
+
+#cloud2 {
+  top: 100px !important;
+  right: 20px;
+}
+
+@-webkit-keyframes cloudMovement {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@keyframes cloudMovement {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+.hero {
+  padding-top: 50px;
+  height: 80vh;
+  background-image: url("../assets/images/confetti.png");
+  background-size: contain;
+  margin-bottom: 20vh;
+}
+
+@media (max-width: 763px) {
+  .hero {
+    padding-top: 80px;
+    background-size: cover;
+  }
+}
+
+.hero h1 {
+  font-size: 100px;
+  text-align: center;
+  color: var(--primaryColor);
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1080px) {
+  .hero h1 {
+    font-size: 52px;
+    line-height: 50px;
+  }
+}
+
+.hero #panda {
+  width: 90%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero #girlConfetti1 {
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+@media (max-width: 763px) {
+  .hero #girlConfetti1 {
+    width: 130px;
+  }
+}
+
+.hero #girlConfetti2 {
+  position: absolute;
+  width: 200px;
+  right: 10px;
+  bottom: 0;
+}
+
+@media (max-width: 763px) {
+  .hero #girlConfetti2 {
+    width: 130px;
+  }
+}
+
+main {
+  padding: 150px 0;
+  position: relative;
+}
+
+@media (max-width: 763px) {
+  main {
+    padding: 0;
+  }
+}
+
+main h2 {
+  font-family: var(--robotoFont);
+  width: 80%;
+  margin: 0 auto 50px;
+  text-align: center;
+  font-size: 32px;
+  color: var(--primaryColor);
+}
+
+@media (max-width: 763px) {
+  main h2 {
+    font-size: 28px;
+  }
+}
+
+main #flower1 {
+  width: 100px;
+  position: absolute;
+  top: 80px;
+  left: 20px;
+}
+
+@media (max-width: 763px) {
+  main #flower1 {
+    width: 60px;
+    top: 0;
+  }
+}
+
+main #flower2 {
+  width: 100px;
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+@media (max-width: 763px) {
+  main #flower2 {
+    width: 60px;
+    top: 0;
+  }
+}
+
+main p {
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 1.5px;
+  font-family: var(--robotoFont);
+  width: 90%;
+  margin: 0 auto;
+  max-width: 900px;
+  color: #2c272e;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 763px) {
+  main p {
+    font-size: 16px;
+  }
+}
+
+main .gallery {
+  padding-top: 100px;
+  position: relative;
+}
+
+main .gallery #cat_love1 {
+  position: absolute;
+  width: 120px;
+  left: 20px;
+  top: 100px;
+}
+
+@media (max-width: 763px) {
+  main .gallery #cat_love1 {
+    width: 80px;
+  }
+}
+
+main .gallery #cat_love2 {
+  position: absolute;
+  width: 120px;
+  right: 20px;
+  top: 100px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+@media (max-width: 763px) {
+  main .gallery #cat_love2 {
+    width: 80px;
+  }
+}
+
+main .gallery h2 {
+  margin-bottom: 0;
+}
+
+main .gallery .gallery_imgs .gallery_img {
+  width: 90%;
+  max-width: 900px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+main .dance {
+  padding: 100px 0;
+}
+
+@media (max-width: 763px) {
+  main .dance {
+    padding: 0 0 100px;
+  }
+}
+
+main .dance img {
+  max-width: 450px;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 90%;
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 600px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  height: 600px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 90%;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
